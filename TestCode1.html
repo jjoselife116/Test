@@ -1,0 +1,203 @@
+<html>
+
+<head>
+    <style type="text/css">
+        .turbolinks-progress-bar {
+            position: fixed;
+            display: block;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: #0076ff;
+            z-index: 9999;
+            transition: width 300ms ease-out, opacity 150ms 150ms ease-in;
+            transform: translate3d(0, 0, 0);
+        }
+    </style>
+
+
+    <link href="empForm1.css" rel="stylesheet">
+
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+    <link rel="stylesheet" media="all" href="/assets/alignment_types.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" data-turbolinks-track="reload">
+    <link rel="stylesheet" media="all" href="/assets/application_forms.self-1390859dd628c9422f5afd9adebace38d8586a7c629b8c1ddd84371c48eb7e8f.css?body=1" data-turbolinks-track="reload">
+    <link rel="stylesheet" media="all" href="/assets/appointments.self-281fbed360ebb6c7b396309dc16541d24ba32e015ac5262e4ae0d33eb9a4ca73.css?body=1" data-turbolinks-track="reload">
+    <link rel="stylesheet" media="all" href="/assets/candidates.self-1d320d9aa3aba6cfca2382373dfcb082cca9b941c289bca2c90c47d29881201f.css?body=1" data-turbolinks-track="reload">
+    <link rel="stylesheet" media="all" href="/assets/course_types.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" data-turbolinks-track="reload">
+    <link rel="stylesheet" media="all" href="/assets/courses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" data-turbolinks-track="reload">
+    <link rel="stylesheet" media="all" href="/assets/experiences.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" data-turbolinks-track="reload">
+    <link rel="stylesheet" media="all" href="/assets/faculties.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" data-turbolinks-track="reload">
+    <link rel="stylesheet" media="all" href="/assets/faculty_types.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" data-turbolinks-track="reload">
+    <link rel="stylesheet" media="all" href="/assets/scaffolds.self-566db3b8a23f6230e6c0ee4fd34877a4db0f64c9644f71d3e40d2ba386ef1b2c.css?body=1" data-turbolinks-track="reload">
+    <link rel="stylesheet" media="all" href="/assets/system_admin_landing.self-3e45f0e205fb8904dbbec1de054e0db018e1907808a4462a3fc15527670cf233.css?body=1" data-turbolinks-track="reload">
+    <link rel="stylesheet" media="all" href="/assets/timeslots.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" data-turbolinks-track="reload">
+    <link rel="stylesheet" media="all" href="/assets/training_centers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" data-turbolinks-track="reload">
+    <link rel="stylesheet" media="all" href="/assets/fullcalendar.self-6ebb305a0570e9388d16dde4de5a2d5d008b310e4796dd8075acc53e46f9816e.css?body=1" data-turbolinks-track="reload">
+    <link rel="stylesheet" media="all" href="/assets/application.self-533378a2077e1eac9b40449318fe717bdeb8dfdf9ed2935c46302300774abadb.css?body=1" data-turbolinks-track="reload">
+    <link rel="stylesheet" media="all" href="/assets/dataTables/jquery.dataTables.self-0bc092be96828915f46a1e0afb0eebf014b3e894fdb1c1d2e69f526d3028c88e.css?body=1" data-turbolinks-track="reload">
+    <script src="/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" data-turbolinks-track="reload"></script>
+    <script src="/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" data-turbolinks-track="reload"></script>
+    <script src="/assets/dataTables/jquery.dataTables.self-f520d04a662abc3bbb379438d969df199552297a55b74651a9e2b33b775df3ed.js?body=1" data-turbolinks-track="reload"></script>
+    <script src="/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" data-turbolinks-track="reload"></script>
+    <script src="/assets/bootstrap.self-b38817c3e3a3049abb1fc08dd6ae448b23330f8453226efdb074710209474f75.js?body=1" data-turbolinks-track="reload"></script>
+    <script src="/assets/moment.self-34da66f0997d145341cfb3fc71c794ea32b4c6affa3ff5d9e7e5107170125d1c.js?body=1" data-turbolinks-track="reload"></script>
+    <script src="/assets/date/en-US.self-656d59d4bdf9c1a4f512730ebe3f3656797ec2da36fc1656994a0c96b7f3ff86.js?body=1" data-turbolinks-track="reload"></script>
+    <script src="/assets/date/core.self-c222c6d82a43858e225271d904fc171f423dcfb135204a27263d2c30ced2a3ad.js?body=1" data-turbolinks-track="reload"></script>
+    <script src="/assets/date/parser.self-cf283bfa2fb9f139044ba942a9212a65156964c1568453b19784ab5fab075633.js?body=1" data-turbolinks-track="reload"></script>
+    <script src="/assets/date/sugarpak.self-ebc2e572be0f3077d02bfd63059955e7a9f681e9cca3af5e71c0f6155730a971.js?body=1" data-turbolinks-track="reload"></script>
+    <script src="/assets/date/time.self-afa2f6250fe8ccdf822727e72b39e657f05a018c0cc7c942bf993700e3c4f35d.js?body=1" data-turbolinks-track="reload"></script>
+    <script src="/assets/date.self-bec649aaefdbdec7ccbb147509651f79f2f85ba2bcf315466fe1eba606353d12.js?body=1" data-turbolinks-track="reload"></script>
+    <script src="/assets/maskedinput.self-1695ad4cb7fd544569c93c1e39c691095704199eefd9bb34d53784c75fc53d63.js?body=1" data-turbolinks-track="reload"></script>
+    <script src="/assets/fullcalendar.self-ff7bc06c41d0abf9287a459a84a139ac5747b467cec171295d945641fe997535.js?body=1" data-turbolinks-track="reload"></script>
+    <script src="/assets/Chart.bundle.self-618f7f72e8d475e9e00c017bbebbdee902c4a752afc6a15f27c324739ce08709.js?body=1" data-turbolinks-track="reload"></script>
+    <script src="/assets/chartkick.self-ef2e937dffc951e7beb32ed20f7ad0485df1f314986d857f391391a86167040b.js?body=1" data-turbolinks-track="reload"></script>
+    <script src="/assets/alignment_types.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" data-turbolinks-track="reload"></script>
+    <script src="/assets/application_forms.self-c955ed42947c1b7572f71ac9e28b63163370b815231568d6273ba690a20f7e18.js?body=1" data-turbolinks-track="reload"></script>
+    <script src="/assets/appointments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" data-turbolinks-track="reload"></script>
+    <script src="/assets/bootstrap-formhelpers-states.en_US.self-9bbd8b37ddd5bbcad2e6ccc62bf31cb3a283b4ad896d4909bcc7870cc1829f30.js?body=1" data-turbolinks-track="reload"></script>
+    <script src="/assets/bootstrap-formhelpers-states.self-dc3379a5242fab42b5e363bb13c1b96eb4ea869cc1b81d7a06c6f6c491be76ef.js?body=1" data-turbolinks-track="reload"></script>
+    <script src="/assets/action_cable.self-17ebe4af84895fa064a951f57476799066237d7bb5dc4dc351a8b01cca19cce9.js?body=1" data-turbolinks-track="reload"></script>
+    <script src="/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" data-turbolinks-track="reload"></script>
+    <script src="/assets/candidates.self-8dae8595d365057f65bd627ee907edb5a2750daaa7582ec72565341b6d560281.js?body=1" data-turbolinks-track="reload"></script>
+    <script src="/assets/course_types.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" data-turbolinks-track="reload"></script>
+    <script src="/assets/courses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" data-turbolinks-track="reload"></script>
+    <script src="/assets/experiences.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" data-turbolinks-track="reload"></script>
+    <script src="/assets/faculties.self-f36357408b54f4198f68f772cc07bfa1512feda8ffdad884a04987bd80b44942.js?body=1" data-turbolinks-track="reload"></script>
+    <script src="/assets/faculty_types.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" data-turbolinks-track="reload"></script>
+    <script src="/assets/system_admin_landing.self-fd1e705c05c45bd91dbac91ca741d4d21ae191c693e9c404be66e8251bbf930e.js?body=1" data-turbolinks-track="reload"></script>
+    <script src="/assets/timeslots.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" data-turbolinks-track="reload"></script>
+    <script src="/assets/training_centers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" data-turbolinks-track="reload"></script>
+    <script src="/assets/bootstrap-datetimepicker.self-e6f95cebb56ba301ea62d73e475b1c3d15a97ae19bb2a8adf2bae7496174a8de.js?body=1" data-turbolinks-track="reload"></script>
+    <script src="/assets/application.self-d71fa597e495f173da155c9a432566139774314ebcbf570bb31dcdc8b73da7fb.js?body=1" data-turbolinks-track="reload"></script>
+    <title>TPIS</title>
+    <meta name="csrf-param" content="authenticity_token">
+    <meta name="csrf-token" content="lDBWCMtJpm1J1CLVxB2dw+q2eq/qf7pExUolVH6g9cezyeyWTrwZGmsKwCtadWmDj8/tPa3LP4nyfLdt/O8cvA==">
+</head>
+
+<body>
+    <div id="wrapper">
+        <!---<div class="navbar navbar-defult  role="navigation"> -->
+        <!---<nav class="navbar navbar-inverse bg-primary"> -->
+        <!---<div class="navbar navbar-defult  role="navigation"> -->
+        <!---<nav class="navbar navbar-inverse bg-primary"> -->
+
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0; background-color: #3f3f3f; border: 0px">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+                <div class="navbar-brand">
+
+                    <a class="navbar-brand" href="/system_admin_landing">
+                   <img class="logolink" height="150px" src="/TPIS_Logo.png" alt="Tpis logo">
+</a> </div>
+            </div>
+
+
+            <!--- Candidate Navigation --->
+
+
+
+
+
+            <!--- Candidate Navigation --->
+
+
+
+            <!--- Candidate Navigation --->
+
+
+            <ul class="nav navbar-nav pull-right">
+
+                <div class="btn-group">
+                    <a class="btn btn-default" href="/users/edit">tin@sdc.com</a>
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <span class="caret"></span>
+               <span class="sr-only">User</span>
+             </button>
+
+
+                    <ul class="dropdown-menu">
+                        <!----- Sign in view for Canddiate -------------------------------------------------------------------->
+                        <!------------ Sign in view for Faculty -------------------------------------------------------------------->
+
+                        <!----------System Admin ------------->
+                        <li><a href="/faculties/3">My Profile</a></li>
+                        <li class="divider"></li>
+                        <li> <a rel="nofollow" data-method="delete" href="/users/sign_out">Log out</a></li>
+
+                    </ul>
+
+                </div>
+
+            </ul>
+
+
+        </nav>
+
+
+
+        <div class="wrapper-alert">
+
+        </div>
+    </div>
+
+    <h1>New Alignment Type</h1>
+
+    <form class="new_alignment_type" id="new_alignment_type" action="/alignment_types" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="MowG5/aOdOFFJBkzAt8wPH8dWi6NQ1ztj/wGYcIfBhgVdbx5c3vLlmf6+82ct8R8GmTNvMr32SC4ypRYQFDvYw==">
+
+
+
+        <div class="container">
+            <div style="margin-top:50px;" class="col-md-5 col-md-offset-3 col-sm-7 col-sm-offset-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+
+                        <div class="panel-title"><strong>Alignment Type</strong>
+                            <div class="pull-right">
+                                <div style="margin-top: -6px">
+                                    <a class="btn btn-danger" href="/alignment_types">Cancel</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div style="padding-top:30px" class="panel-body">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <label for="alignment_type_alignment_type">Alignment type</label>
+                                <input class="form-control" type="text" name="alignment_type[alignment_type]" id="alignment_type_alignment_type">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <label for="alignment_type_abbrev">Abbrev</label>
+                                <input class="form-control" type="text" name="alignment_type[abbrev]" id="alignment_type_abbrev">
+                            </div>
+
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-success">Update Alignment Type</button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+
+    <a href="/alignment_types">Back</a>
+
+
+
+</body>
+
+</html>
